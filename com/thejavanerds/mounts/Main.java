@@ -1,3 +1,5 @@
+package com.thejavanerds.mounts;
+
 /**
  * Created by ZhsCraft on 2/5/2015.
  */
