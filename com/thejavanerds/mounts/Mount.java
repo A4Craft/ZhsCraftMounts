@@ -86,6 +86,7 @@ public class Mount implements Listener {
                 if (Mount.this.summon.contains(p.getName())) {
                     Mount.this.summon.remove(p.getName());
                 }
+                Bukkit.getScheduler().cancelTask(Mount.this.SpawnCount);
                 Horse h = (Horse)p.getWorld().spawnCreature(p.getLocation(), EntityType.HORSE);
                 h.setStyle(s);
                 h.setCanPickupItems(false);
